@@ -1,0 +1,36 @@
+{
+  "name": "covid-api",
+  "version": "1.0.0",
+  "description": "Api for covid project",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/register": "^7.9.0",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-ni/covid-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongo",
+    "mongoose",
+    "graphql",
+    "rest",
+    "passport",
+    "auth",
+    "es"
+  ],
+  "author": "js.ni.org/boykland/clenondavis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-ni/covid-api/issues"
+  },
+  "homepage": "https://github.com/js-ni/covid-api#readme"
+}
