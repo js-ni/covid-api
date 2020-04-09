@@ -1,5 +1,5 @@
 /**
- * @name Rest/Endpoint/Cities
+ * @name Rest/Endpoint/Account
  * @memberof Rest/Endpoint
  * @type {Object}
  * @return {Object} List of global endpoint, define if is REST or GRAPHQL Schema
@@ -13,26 +13,27 @@ import express from "express";
 import { routes } from "../../settings";
 //#endregion
 //#region service
-import { addBook } from "../../services";
+import { AccountSvc } from "../../services";
 //#endregion
 //#region common
 //#endregion
 
 const endpoint = express();
-const { bookRt } = routes;
+const { accountsRt } = routes;
+const { addAccount } = AccountSvc;
 
 /**
- * @name AddNewCity
+ * @name AddNewAccount
  * @memberof Rest/Endpoint/Cities
  * @type {POST}
  * @param {STRING} url  - url for express verb
  * @param {Fn} function - closure
  */
-endpoint.post(bookRt.add, (req, res) => {
+endpoint.post(accountsRt.add, (req, res) => {
   let {
     body: { model },
   } = req;
-  addBook();
+  addAccount();
 });
 
 export default endpoint;

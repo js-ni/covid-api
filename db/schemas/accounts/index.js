@@ -16,30 +16,30 @@ const Schema = mongoose.Schema;
 
 const AccountsSchema = new Schema({
   cityCode: {
-    type: ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "Cities",
   },
   userId: {
-    type: ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "Users",
     unique: true,
   },
   cellPhone: {
-    type: String,
+    type: Schema.Types.String,
     unique: true,
   },
   telPhone: {
-    type: String,
+    type: Schema.Types.String,
     unique: true,
   },
   status: {
-    type: String,
+    type: Schema.Types.String,
   },
   createdDate: {
-    type: Date,
+    type: Schema.Types.Date,
   },
-  createdDate: {
-    type: Date,
+  updatedDate: {
+    type: Schema.Types.Date,
   },
 });
 

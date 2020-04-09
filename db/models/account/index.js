@@ -12,9 +12,9 @@
 import mongoose from "mongoose";
 //#endregion
 //#region Schema
-import BookSchema from "../schemas";
+import { AccountSch } from "../../schemas";
 //#endregion
 
-const Book = mongoose.model("Account", BookSchema);
+const Book = mongoose.model("Account", AccountSch);
 
 export default Book;

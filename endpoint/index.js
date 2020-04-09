@@ -10,11 +10,11 @@
 import express from "express";
 //#endregion
 //#region endpoint
-import bookEnd from "./book";
+import accountEnd from "./account";
 //#endregion
 
 const endpoints = express();
 
-endpoints.use(bookEnd);
+endpoints.use(accountEnd);
 
 export default endpoints;

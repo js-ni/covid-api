@@ -7,7 +7,7 @@
  */
 
 //#region models
-import AcoundMdl from "./account";
+import AccountMdl from "./account";
 //#endregion
 
-export { AcoundMdl };
+export { AccountMdl };

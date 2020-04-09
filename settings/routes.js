@@ -12,8 +12,8 @@ const baseApi = "/api";
 const rest = "/rest";
 const v1 = "/v1.0.0";
 const baseRestUrl = `${baseApi}${rest}${v1}`;
-const booksUrl = `${baseRestUrl}/books`;
+const accountsUrl = `${baseRestUrl}/accounts`;
 
-export const bookRt = {
-  add: `${booksUrl}`,
+export const accountsRt = {
+  add: `${accountsUrl}`,
 };
