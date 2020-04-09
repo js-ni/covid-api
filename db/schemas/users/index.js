@@ -14,22 +14,17 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const AccountsSchema = new Schema({
-  cityCode: {
+const UsersSchema = new Schema({
+  userName: {
     type: Schema.Types.String,
-    ref: "City",
+    unique: true,
   },
-  userId: {
+  email: {
+    type: Schema.Types.String,
+    unique: true,
+  },
+  uid: {
     type: Schema.Types.ObjectId,
-    ref: "User",
-    unique: true,
-  },
-  cellPhone: {
-    type: Schema.Types.String,
-    unique: true,
-  },
-  telPhone: {
-    type: Schema.Types.String,
     unique: true,
   },
   status: {
@@ -43,4 +38,4 @@ const AccountsSchema = new Schema({
   },
 });
 
-export default AccountsSchema;
+export default UsersSchema;

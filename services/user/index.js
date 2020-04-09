@@ -7,23 +7,25 @@
  * @author boykland/clenondavis <clenondavis@outlook.com>
  */
 
+//#region lib
+import mongoose from "mongoose";
+//#endregion
 //#region Schema
-import { AccountMdl } from "../../db/models";
+import { UserMdl } from "../../db/models";
 //#endregion
 
 /**
- * @name AddNewAccount
+ * @name AddNewUser
  * @memberof Services
  * @type {CITY}
- * @description Add a new account in the database
- * @return {PROMISE/MODEL} - A promise with The account model just created
+ * @description Add a new city in the database
+ * @return {PROMISE/MODEL} - A promise with The city model just created
  */
-export const addAccount = async () =>
-  await AccountMdl.create({
-    cityCode: "NIO/Man",
-    userId: "5e8fa6c6e568c93b58c313eb",
-    cellPhone: "+5051235465498",
-    telPhone: "+5051235465497",
+export const addUser = async () =>
+  await UserMdl.create({
+    userName: "boykland/clenondavis",
+    email: "code@boykland.com",
+    uid: new mongoose.Types.ObjectId(),
     status: "Active",
     createdDate: new Date(),
     updatedDate: new Date(),
