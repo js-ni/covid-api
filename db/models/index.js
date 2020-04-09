@@ -8,6 +8,7 @@
 
 //#region models
 import AccountMdl from "./account";
+import CityMdl from "./city";
 //#endregion
 
-export { AccountMdl };
+export { AccountMdl, CityMdl };

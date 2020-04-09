@@ -14,23 +14,13 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const AccountsSchema = new Schema({
-  cityCode: {
-    type: Schema.Types.ObjectId,
-    ref: "City",
-  },
-  userId: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-    unique: true,
-  },
-  cellPhone: {
+const CitiesSchema = new Schema({
+  code: {
     type: Schema.Types.String,
     unique: true,
   },
-  telPhone: {
+  name: {
     type: Schema.Types.String,
-    unique: true,
   },
   status: {
     type: Schema.Types.String,
@@ -43,4 +33,4 @@ const AccountsSchema = new Schema({
   },
 });
 
-export default AccountsSchema;
+export default CitiesSchema;

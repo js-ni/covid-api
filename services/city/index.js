@@ -8,21 +8,20 @@
  */
 
 //#region Schema
-import { AccountMdl } from "../../db/models";
+import { CityMdl } from "../../db/models";
 //#endregion
 
 /**
- * @name AddNewAccount
+ * @name AddNewCity
  * @memberof Services
  * @type {CITY}
- * @description Add a new account in the database
- * @return {PROMISE/MODEL} - A promise with The account model just created
+ * @description Add a new city in the database
+ * @return {PROMISE/MODEL} - A promise with The city model just created
  */
-export const addAccount = async () =>
-  await AccountMdl.create({
-    cityCode: "NIO/Man",
-    cellPhone: "+5051235465498",
-    telPhone: "+5051235465497",
+export const addCity = async () =>
+  await CityMdl.create({
+    code: "NIO/Man",
+    name: "Managua",
     status: "Active",
     createdDate: new Date(),
     updatedDate: new Date(),

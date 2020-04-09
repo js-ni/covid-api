@@ -8,6 +8,7 @@
 
 //#region schemas
 import AccountSch from "./accounts";
+import CitySch from "./cities";
 //#endregion
 
-export { AccountSch };
+export { AccountSch, CitySch };

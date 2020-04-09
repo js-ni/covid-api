@@ -12,9 +12,9 @@
 import mongoose from "mongoose";
 //#endregion
 //#region Schema
-import { AccountSch } from "../../schemas";
+import { CitySch } from "../../schemas";
 //#endregion
 
-const Account = mongoose.model("Account", AccountSch);
+const City = mongoose.model("City", CitySch);
 
-export default Account;
+export default City;

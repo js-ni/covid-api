@@ -8,6 +8,7 @@
 
 //#region schemas
 import * as AccountSvc from "./account";
+import * as CitySvc from "./city";
 //#endregion
 
-export { AccountSvc };
+export { AccountSvc, CitySvc };
