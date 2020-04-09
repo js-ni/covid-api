@@ -21,6 +21,8 @@ const port = process.env.PORT || 7000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+// This is temporaly is just to test schema and model
+// TODO:Implement graphql schema, apollo
 app.use(endpoints);
 
 const db = mongoose.connection;
