@@ -1,20 +1,15 @@
 /**
  * @file db/models/index.js
- * @name Models
- * @memberof db
- * @type {MODEL}
- * @return {MODEL} Test Model
+ * @name DB/Models
+ * @return {OBJECT} Lit of models
  * @since v1.0.0
  * @author boykland/clenondavis <clenondavis@outlook.com>
  */
 
-//#region lib
-import mongoose from "mongoose";
-//#endregion
-//#region Schema
-import BookSchema from "../schemas";
+//#region models
+import AccountMdl from "./account";
+import CityMdl from "./city";
+import UserMdl from "./user";
 //#endregion
 
-const Book = mongoose.model("Book", BookSchema);
-
-export default Book;
+export { AccountMdl, CityMdl, UserMdl };
